@@ -1,2 +1,2 @@
 # meuSite
-esti e meu primeira página estática
+ primeira página estática
