@@ -3,60 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // Link externo para biblioteca de ícones Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- // Link externo para biblioteca de animações AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- // Link para o arquivo de estilos CSS local -->
     <link rel="stylesheet" href="style.css">
     <title>Lucas Portfolio</title>
 </head>
 <body>
+    <!-- // Menu de navegação -->
     <nav>
         <div class="nav-container">
+            <!-- // Logotipo animado com AOS -->
             <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
                 Lucas <span>F de Lima</span>
             </div>
             <div class="links">
+                <!-- // Links do menu com animações AOS -->
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Inicio</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">Sobre min</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">Serviços</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contato</a></div>
+  
+            </div>
+            <!-- // Ícone de menu hamburguer -->
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
-        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-    </div>
+        <!-- // Menu suspenso (dropdown) para dispositivos móveis -->
         <div class="dropdown">
             <div class="links">
                 <a href="#">Inicio</a>
                 <a href="#">Sobre min</a>
-                <a href="#">Serviços</a>
                 <a href="#">Skills</a>
-                <a href="#">Contato</a>
+                <!-- // Ícone para fechar o menu -->
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
     </nav>
+    <!-- // Seção principal -->
     <section>
         <div class="main-container">
+            <!-- // Imagem com animação AOS -->
             <div class="image" data-aos="zoom-out" data-aos-duration="3000">
-                <img src="midia/49419796_107614820305830_5045293912197955584_n.jpg" alt="">
+                <img src="midia/fptp-portifolio.jpg" alt="">
+                <!-- // Caminho da imagem: "midia" é o diretório local -->
             </div>
             <div class="content">
+                <!-- // Texto principal com animação -->
                 <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Óla eu sou <span>Lucas</span></h1>
+                <!-- // Texto animado estilo "máquina de escrever" -->
                 <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">Sou um <span class="typewriter-text"></span><label for="">|</label></div>
-                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Frase de efeito.</p>
+                <!-- // Frase complementar -->
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">"Testar sistemas é como enfrentar um boss final: cada bug encontrado é uma vitória, e cada melhoria é um power-up para o futuro!"</p>
+                <!-- // Links para redes sociais -->
                 <div class="social-links">
-                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/dbuG-Hun7er" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/lucas-f-de-lima-6946b6344/" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
+                <!-- // Botão para baixar o CV -->
                 <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
                     <button>Dowloads CV</button>
                 </div>
             </div>
         </div>
     </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- // Scripts para animações e funcionalidade -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- // Link para AOS -->
     <script>
-      AOS.init({offset:0});
+      AOS.init({offset:0}); // Inicializa o AOS com deslocamento zero
     </script>
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- // Arquivo JavaScript local -->
 </body>
 </html>
