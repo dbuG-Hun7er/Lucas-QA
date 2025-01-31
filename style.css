@@ -244,3 +244,26 @@ section{
     width: 8px; /* Largura da barra de rolagem (vertical) */
     height: 8px; /* Altura da barra de rolagem (horizontal) */
 }
+
+/* Estiliza o fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Cor de fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estiliza o "thumb" (parte que se move da barra de rolagem) */
+::-webkit-scrollbar-thumb {
+    background: #075d2b; /* Cor do scroll */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Efeito ao passar o mouse sobre a barra */
+::-webkit-scrollbar-thumb:hover {
+    background: #05642d; /* Cor mais escura ao passar o mouse */
+}
+
+/* Para Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #104a33 #1e1e1e;
+}
