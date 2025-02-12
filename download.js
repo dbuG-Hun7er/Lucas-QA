@@ -1,6 +1,6 @@
 document.getElementById("downloadBtn").addEventListener("click", function(){
     // Defina o caminho do arquivo e o nome do arquivo
-    const pastaUrl = "Lucas-QA/meuSite/docs/Lucas_F_Lima_CV.pdf";
+    const pastaUrl = "docs/Lucas_F_de_Lima_CV.pdf";
     const pastaName = "Lucas_F_Lima_CV.pdf";
     // Crie um elemento <a> e defina o atributo de download
     const a = document.createElement("a");
